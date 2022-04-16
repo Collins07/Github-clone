@@ -9,6 +9,7 @@ import { GithubProfileCardComponent } from './components/github-profile-card/git
 import { GithubProfileDataComponent } from './components/github-profile-data/github-profile-data.component';
 import { GithubReposComponent } from './components/github-repos/github-repos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
