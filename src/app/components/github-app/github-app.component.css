@@ -1,5 +1,5 @@
 .container{
-    border: 1px solid grey;
+    border: 1px solid rgb(196, 193, 193);
     border-radius: 5px;
 }
 .card-header{
@@ -23,7 +23,7 @@ form{
 .btn{
     height: 35px;
     width: 70px;
-    background-color: #21aba5;
+    background-color: #109790;
     color: white;
     font-size: 15px;
     font-weight: bold;
