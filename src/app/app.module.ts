@@ -10,6 +10,8 @@ import { GithubProfileDataComponent } from './components/github-profile-data/git
 import { GithubReposComponent } from './components/github-repos/github-repos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { GithubServicesService } from './services/github-services.service';
+import { CLIENT_ID } from './GithubCred';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,9 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [GithubServicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
