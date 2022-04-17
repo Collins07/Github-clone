@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
+import { catchError, count, retry } from 'rxjs/operators';
 import { CLIENT_ID, CLIENT_SECRET } from '../GithubCred';
 
 @Injectable({
@@ -37,7 +37,7 @@ export class GithubServicesService {
   // }
 
 }
-function count1(count1: any): import("rxjs").OperatorFunction<Object, Object> {
-  throw new Error('Function not implemented.');
-}
+// function count1(count1: any): import("rxjs").OperatorFunction<Object, Object> {
+//   throw new Error('Function not implemented.');
+// }
 
