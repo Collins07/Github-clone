@@ -22,6 +22,10 @@ export class GithubAppComponent implements OnInit {
       this.githubProfile= data;
 
     });
+    this.githubService.getRepos(this.githubUserQuery).subscribe((data) =>{
+      this.githubRepos= data;
+
+    });
     
   }
 
