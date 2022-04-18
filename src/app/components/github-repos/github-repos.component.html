@@ -4,7 +4,7 @@
     </div>
     <div class="card-body">
         <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between">
+            <li *ngFor="let repo of githubRepos" class="list-group-item d-flex justify-content-between">
                 <span class="badge badge-success">Stars</span>
                 <span class="badge badge-primary">Forks</span>
             </li>
