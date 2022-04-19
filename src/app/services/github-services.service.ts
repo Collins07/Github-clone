@@ -27,7 +27,5 @@ export class GithubServicesService {
  
 
 }
-function count1(count1: any): import("rxjs").OperatorFunction<Object, Object> {
-  throw new Error('Function not implemented.');
-}
+
 
