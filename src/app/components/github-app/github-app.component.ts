@@ -8,9 +8,9 @@ import { GithubServicesService } from 'src/app/services/github-services.service'
 })
 export class GithubAppComponent implements OnInit {
 
-  public githubUserQuery!: string;
+  public githubUserQuery: string | undefined;
   public githubProfile: any;
-  public githubRepos!: any[];
+  public githubRepos: any[]= [];
 
   constructor(private githubService: GithubServicesService) { }
 
