@@ -5,8 +5,9 @@
     <div class="card-body">
         <ul class="list-group">
             <li *ngFor="let repo of githubRepos" class="list-group-item d-flex justify-content-between">
-                <span class="badge badge-success">Stars</span>
-                <span class="badge badge-primary">Forks</span>
+                <a [href]="repo.html_url" class="text-primary font-weight-bold" target="_blank">{{repo.name}}</a>
+                <span class="badge badge-success">{{repo.stargazers_count}} Stars</span>
+                <span class="badge badge-primary">{{repo.watchers_count}}Forks</span>
             </li>
         </ul>
     </div>
