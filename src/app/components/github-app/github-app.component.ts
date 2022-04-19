@@ -8,9 +8,9 @@ import { GithubServicesService } from 'src/app/services/github-services.service'
 })
 export class GithubAppComponent implements OnInit {
 
-  public githubUserQuery: string | undefined;
+  public githubUserQuery!: string;
   public githubProfile: any;
-  public githubRepos: any[]= [];
+  public githubRepos!: any[];
 
   constructor(private githubService: GithubServicesService) { }
 
@@ -31,7 +31,5 @@ export class GithubAppComponent implements OnInit {
 
 }
 
-function next(next: any, arg1: (data: any) => void) {
-  throw new Error('Function not implemented.');
-}
+
 
